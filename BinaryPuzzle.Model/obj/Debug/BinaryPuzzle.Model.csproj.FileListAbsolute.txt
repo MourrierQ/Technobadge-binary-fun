@@ -1,0 +1,11 @@
+C:\Users\Student\source\repos\BinaryPuzzle\BinaryPuzzle.Model\bin\Debug\BinaryPuzzle.Model.dll.config
+C:\Users\Student\source\repos\BinaryPuzzle\BinaryPuzzle.Model\bin\Debug\BinaryPuzzle.Model.dll
+C:\Users\Student\source\repos\BinaryPuzzle\BinaryPuzzle.Model\bin\Debug\BinaryPuzzle.Model.pdb
+C:\Users\Student\source\repos\BinaryPuzzle\BinaryPuzzle.Model\bin\Debug\EntityFramework.dll
+C:\Users\Student\source\repos\BinaryPuzzle\BinaryPuzzle.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Student\source\repos\BinaryPuzzle\BinaryPuzzle.Model\bin\Debug\EntityFramework.xml
+C:\Users\Student\source\repos\BinaryPuzzle\BinaryPuzzle.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Student\source\repos\BinaryPuzzle\BinaryPuzzle.Model\obj\Debug\BinaryPuzzle.Model.csproj.CoreCompileInputs.cache
+C:\Users\Student\source\repos\BinaryPuzzle\BinaryPuzzle.Model\obj\Debug\BinaryPuzzle.Model.dll
+C:\Users\Student\source\repos\BinaryPuzzle\BinaryPuzzle.Model\obj\Debug\BinaryPuzzle.Model.pdb
+C:\Users\Student\source\repos\BinaryPuzzle\BinaryPuzzle.Model\obj\Debug\BinaryPuzzle.Model.csprojResolveAssemblyReference.cache
