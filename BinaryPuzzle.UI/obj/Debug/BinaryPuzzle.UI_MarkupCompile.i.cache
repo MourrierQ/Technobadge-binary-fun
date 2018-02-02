@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Student\source\repos\BinaryPuzzle\BinaryPuzzle.UI\App.xaml
-51955217371
+6933526518
 
-381901425290
+44620013999
 24438735245
-MainWindow.xaml;View\DifficultySelectionView.xaml;View\GameGridView.xaml;View\UserDetailView.xaml;View\UserSelectionView.xaml;
+MainWindow.xaml;View\DifficultySelectionView.xaml;View\GameGridView.xaml;View\TimerView.xaml;View\UserDetailView.xaml;View\UserSelectionView.xaml;
 
-False
+True
 

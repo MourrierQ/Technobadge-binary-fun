@@ -12,8 +12,7 @@
             <Setter Property="FontSize" Value="20"/>-->
             <Setter Property="FontWeight" Value="Light"/>
             <Setter Property="Foreground" Value="#FFFFFF"/>
-            <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="HorizontalAlignment" Value="Center"/>
+            
 
             <Style.Triggers>
                 <Trigger Property="Button.IsMouseOver" Value="True">

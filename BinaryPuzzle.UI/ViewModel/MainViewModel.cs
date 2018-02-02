@@ -11,14 +11,31 @@ namespace BinaryPuzzle.UI.ViewModel
     public class MainViewModel : ViewModelBase
     {
 
-        public MainViewModel(IUserSelectionViewModel userSelectionViewModel, IDifficultySelectionViewModel difficultySelectionViewModel, IGameGridViewModel gameGridViewModel, IEventAggregator eventAggregator)
+        public MainViewModel(IUserSelectionViewModel userSelectionViewModel,
+            IDifficultySelectionViewModel difficultySelectionViewModel,
+            IGameGridViewModel gameGridViewModel,
+            ITimerViewModel timerViewModel,
+            IEventAggregator eventAggregator)
         {
             UserSelectionViewModel = userSelectionViewModel;
             DifficultySelectionViewModel = difficultySelectionViewModel;
             GameGridViewModel = gameGridViewModel;
+            TimerViewModel = timerViewModel;
             _eventAggregator = eventAggregator;
             _eventAggregator.GetEvent<GenerateGridEvent>().Subscribe(OnGenerateGrid);
             _eventAggregator.GetEvent<OnClickEvent>().Subscribe(OnClick);
+            _eventAggregator.GetEvent<OnStartTimerEvent>().Subscribe(OnStartTimer);
+            _eventAggregator.GetEvent<OnStopTimerEvent>().Subscribe(OnStopTimer);
+        }
+
+        private void OnStopTimer(OnStopTimerEventArgs obj)
+        {
+            TimerViewModel.OnStopTimer();
+        }
+
+        private void OnStartTimer(OnStartTimerEventArgs obj)
+        {
+            TimerViewModel.OnStartTimer();
         }
 
         private void OnClick(OnClickEventArgs obj)
@@ -42,6 +59,7 @@ namespace BinaryPuzzle.UI.ViewModel
 
         public IDifficultySelectionViewModel DifficultySelectionViewModel { get; }
         public IGameGridViewModel GameGridViewModel { get; }
+        public ITimerViewModel TimerViewModel { get; }
 
         private IEventAggregator _eventAggregator;
     }

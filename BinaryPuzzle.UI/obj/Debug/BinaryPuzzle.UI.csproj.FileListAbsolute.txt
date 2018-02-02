@@ -37,3 +37,5 @@ C:\Users\Student\source\repos\BinaryPuzzle\BinaryPuzzle.UI\obj\Debug\View\Diffic
 C:\Users\Student\source\repos\BinaryPuzzle\BinaryPuzzle.UI\obj\Debug\View\DifficultySelectionView.baml
 C:\Users\Student\source\repos\BinaryPuzzle\BinaryPuzzle.UI\obj\Debug\View\GameGridView.g.cs
 C:\Users\Student\source\repos\BinaryPuzzle\BinaryPuzzle.UI\obj\Debug\View\GameGridView.baml
+C:\Users\Student\source\repos\BinaryPuzzle\BinaryPuzzle.UI\obj\Debug\View\TimerView.g.cs
+C:\Users\Student\source\repos\BinaryPuzzle\BinaryPuzzle.UI\obj\Debug\View\TimerView.baml

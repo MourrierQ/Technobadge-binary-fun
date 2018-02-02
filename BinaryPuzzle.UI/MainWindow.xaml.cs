@@ -34,19 +34,19 @@ namespace BinaryPuzzle.UI
             await _viewModel.LoadAsync();
         }
 
-        private void OnClick(object sender, RoutedEventArgs e)
-        {
-            if(((Button)sender).Content.ToString() == "0")
-            {
-                ((Button)sender).Content = "1"; 
-                ((Button)sender).Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FF8F00"));
-            }
-            else
-            {
-                ((Button)sender).Content = "0";
-                ((Button)sender).Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#2196F3"));
-            }
-        }
+        //private void OnClick(object sender, RoutedEventArgs e)
+        //{
+        //    if(((Button)sender).Content.ToString() == "0")
+        //    {
+        //        ((Button)sender).Content = "1"; 
+        //        ((Button)sender).Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#FF8F00"));
+        //    }
+        //    else
+        //    {
+        //        ((Button)sender).Content = "0";
+        //        ((Button)sender).Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#2196F3"));
+        //    }
+        //}
     }
 }
 

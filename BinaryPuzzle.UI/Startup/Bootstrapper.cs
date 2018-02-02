@@ -27,6 +27,7 @@ namespace BinaryPuzzle.UI.Startup
             builder.RegisterType<UserSelectionViewModel>().As<IUserSelectionViewModel>();
             builder.RegisterType<DifficultySelectionViewModel>().As<IDifficultySelectionViewModel>();
             builder.RegisterType<GameGridViewModel>().As<IGameGridViewModel>();
+            builder.RegisterType<TimerViewModel>().As<ITimerViewModel>();
 
             builder.RegisterType<LookupDataService>().AsImplementedInterfaces();
             builder.RegisterType<UserDataService>().As<IUserDataService>();

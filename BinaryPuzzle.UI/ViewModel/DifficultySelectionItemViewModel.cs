@@ -38,6 +38,7 @@ namespace BinaryPuzzle.UI.ViewModel
         private void GenerateGrid()
         {
             _eventAggregator.GetEvent<GenerateGridEvent>().Publish(new GenerateGridEventArgs { DifficultyName = DisplayMember});
+            _eventAggregator.GetEvent<OnStartTimerEvent>().Publish(new OnStartTimerEventArgs());
         }
 
         public ICommand GenerateGameGridCommand { get; }

@@ -78,6 +78,8 @@
     <Compile Include="Data\LookupDataService.cs" />
     <Compile Include="Event\GenerateGridEvent.cs" />
     <Compile Include="Event\OnClickEvent.cs" />
+    <Compile Include="Event\OnStartTimerEvent.cs" />
+    <Compile Include="Event\OnStopTimerEvent.cs" />
     <Compile Include="Startup\Bootstrapper.cs" />
     <Compile Include="ViewModel\DifficultySelectionItemViewModel.cs" />
     <Compile Include="ViewModel\DifficultySelectionViewModel.cs" />
@@ -85,8 +87,10 @@
     <Compile Include="ViewModel\GameGridViewModel.cs" />
     <Compile Include="ViewModel\IDifficultySelectionViewModel.cs" />
     <Compile Include="ViewModel\IGameGridViewModel.cs" />
+    <Compile Include="ViewModel\ITimerViewModel.cs" />
     <Compile Include="ViewModel\IUserSelectionViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\TimerViewModel.cs" />
     <Compile Include="ViewModel\UserSelectionItemViewModel.cs" />
     <Compile Include="ViewModel\UserSelectionViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
@@ -95,6 +99,9 @@
     </Compile>
     <Compile Include="View\GameGridView.xaml.cs">
       <DependentUpon>GameGridView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TimerView.xaml.cs">
+      <DependentUpon>TimerView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\UserDetailView.xaml.cs">
       <DependentUpon>UserDetailView.xaml</DependentUpon>
@@ -106,6 +113,7 @@
     <Compile Include="Wrapper\ModelWrapper.cs" />
     <Compile Include="Wrapper\NotifyDataErrorInfoBase.cs" />
     <Compile Include="Wrapper\ResultBoxWrapper.cs" />
+    <Compile Include="Wrapper\TimerWrapper.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -125,6 +133,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\GameGridView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TimerView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

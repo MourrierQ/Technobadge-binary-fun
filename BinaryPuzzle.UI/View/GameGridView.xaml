@@ -59,6 +59,7 @@
                 <RowDefinition/>
                 <RowDefinition Height="215"/>
                 <RowDefinition Height="60"/>
+                <RowDefinition Height="10"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <ItemsControl Grid.Column="1" Grid.Row="1" Width="220"  Name="GameGridCells" ItemsSource="{Binding Cells}">
@@ -99,11 +100,22 @@
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-
+    
                         <Label Background="{Binding Status, UpdateSourceTrigger=PropertyChanged}" Width="{Binding Size}" Height="{Binding Size}" FontSize="{Binding FontSize}" Style="{StaticResource Goal}" Content="{Binding Result}" />
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
+
+            <Grid Grid.Column="1" Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Border Width="80" Grid.Column="1" BorderBrush="#FFF" BorderThickness="2" CornerRadius="5 5 5 5">
+                    <Button Width="80" Background="Transparent" Foreground="#FFFFFF"  Content="Another Grid !" Command="{Binding AnotherGridCommand}"  Style="{StaticResource SetTo0}"/>
+                </Border>
+            </Grid>
         </Grid>
 
     </Grid>
